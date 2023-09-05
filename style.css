@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #282847;
+  color: #282847;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+.generator {
+  width: 100%;
+  max-width: 640px;
+  padding: 32px 16px;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+input:not([type="checkbox"]),
+button {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+.password-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.password-wrap:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 115%;
+  height: 3px;
+  left: 0;
+  right: 0;
+  border-radius: 3px;
+  background: linear-gradient(to right, #ad25fc 25%, #518cd4 75%);
+}
+.password-wrap input {
+  flex: 1 1 0%;
+  padding: 0.5rem;
+  color: #282847;
+}
+.password-wrap input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+#generate {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.password-wrap img {
+  width: 28px;
+  cursor: pointer;
+  text-align: center;
+}
+#generate img {
+  width: 16px;
+}
+
+label {
+  display: flex;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+label span {
+  display: block;
+  flex: 1 1 0%;
+  white-space: nowrap;
+}
+label input[type="number"] {
+  text-align: right;
+}
+button[type="submit"] {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ad25fc 25%, #518cd4 50%);
+  background-size: 200%;
+  background-position: 25%;
+  transition: 0.3s ease-out;
+}
+button[type="submit"]:hover {
+  background-position: 75%;
+}
