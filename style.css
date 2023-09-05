@@ -105,3 +105,10 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-position: 75%;
 }
+
+@media (max-width: 400px) {
+  .generator {
+    width: 100%;
+    overflow: auto;
+  }
+}
